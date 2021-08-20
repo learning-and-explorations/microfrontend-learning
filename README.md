@@ -1,3 +1,5 @@
+![hero image](./images/CAASerole.png)
+
 There are 3 different MFE exampes in here. This is for personal development.
 
 Using single-spa to put together a "relatively" complex microfront end for example purposes
