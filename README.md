@@ -16,9 +16,12 @@ This is a learning repo and I have outlined my main concerns. This is going to a
   - [Version control shouldn't have any impact on overall project](#version-control-shouldnt-have-any-impact-on-overall-project)
   - [Container can decide version to use](#container-can-decide-version-to-use)
   - [Must be able to develop locally](#must-be-able-to-develop-locally)
+- [Important APIs](#important-apis)
+  - [Import Maps](#import-maps)
 - [Deployment requirements](#deployment-requirements)
   - [Deployment requirements](#deployment-requirements)
   - [CDN](#cdn)
+  - [APIs should be lambdas](#apis-should-be-lambdas)
 - [Routing requirements](#routing-requirements)
   - [Container + sub-apps require routing features](#container--sub-apps-require-routing-features)
   - [Sub apps need to add in new pages routes all the time](#sub-apps-need-to-add-in-new-pages-routes-all-the-time)
@@ -55,6 +58,14 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 * All code is double deployed
 * Can work on ONLY your app and everything else is remote
 
+## Important APIs
+### Import Maps
+* Should be an API call but can output static
+* Should be dynamic, no human intervention should be required
+* Sub-apps should be able to determine their own destiny
+    * A/B testing
+    * A build-time feature not dynamic
+
 ## Deployment requirements
 ### Deployment requirements
 * Want to deploy each microfrontend independently (including container)
@@ -63,6 +74,10 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 
 ### CDN
 * Apps are not containerized (Can be at edge)
+
+### APIs should be lambdas
+* They are cheap
+* They don't need to live long
 
 ## Routing requirements
 ### Container + sub-apps require routing features
