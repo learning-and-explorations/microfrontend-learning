@@ -2,7 +2,29 @@
 
 This is a learning repo and I have outlined my main concerns. This is going to a POC of my learnings and resolving these requirements
 
----
+<!-- toc-head -->
+
+## Table of contents
+
+- [Basic Requirements](#basic-requirements)
+  - [Zero coupling between child projects](#zero-coupling-between-child-projects)
+  - [Near zero coupling between container & child apps](#near-zero-coupling-between-container--child-apps)
+  - [CSS from one poject shouldn't affect the other](#css-from-one-poject-shouldnt-affect-the-other)
+  - [Version control shouldn't have any impact on overall project](#version-control-shouldnt-have-any-impact-on-overall-project)
+  - [Container can decide version to use](#container-can-decide-version-to-use)
+  - [Must be able to develop locally](#must-be-able-to-develop-locally)
+- [Deployment requirements](#deployment-requirements)
+  - [Deployment requirements](#deployment-requirements)
+  - [CDN](#cdn)
+- [Routing requirements](#routing-requirements)
+  - [Container + sub-apps require routing features](#container--sub-apps-require-routing-features)
+  - [Sub apps need to add in new pages routes all the time](#sub-apps-need-to-add-in-new-pages-routes-all-the-time)
+  - [We might need to show two or more MFEs at the same time](#we-might-need-to-show-two-or-more-mfes-at-the-same-time)
+  - [We want to use off-the-shelf routing solutions](#we-want-to-use-off-the-shelf-routing-solutions)
+  - [We need navication features for subapps in both hosted & isolation mode](#we-need-navication-features-for-subapps-in-both-hosted--isolation-mode)
+  - [If different apps need to communicate info about routing it should be done in as generic fasion as possible](#if-different-apps-need-to-communicate-info-about-routing-it-should-be-done-in-as-generic-fasion-as-possible)
+
+<!-- toc-tail --> 
 
 
 ## Basic Requirements
