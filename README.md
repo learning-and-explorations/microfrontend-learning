@@ -1,4 +1,4 @@
-![hero image](./images/CAASerole.png)
+![hero image](./images/CAASerole.jpeg)
 
 There are 3 different MFE exampes in here. This is for personal development.
 
