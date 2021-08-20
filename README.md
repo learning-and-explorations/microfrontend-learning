@@ -2,6 +2,9 @@
 
 This is a learning repo and I have outlined my main concerns. This is going to a POC of my learnings and resolving these requirements
 
+<!-- Run this to update TOC -->
+<!-- npx @robb_j/md-toc -i -->
+
 <!-- toc-head -->
 
 ## Table of contents
@@ -9,7 +12,7 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 - [Basic Requirements](#basic-requirements)
   - [Zero coupling between child projects](#zero-coupling-between-child-projects)
   - [Near zero coupling between container & child apps](#near-zero-coupling-between-container--child-apps)
-  - [CSS from one poject shouldn't affect the other](#css-from-one-poject-shouldnt-affect-the-other)
+  - [CSS from one project shouldn't affect the other](#css-from-one-project-shouldnt-affect-the-other)
   - [Version control shouldn't have any impact on overall project](#version-control-shouldnt-have-any-impact-on-overall-project)
   - [Container can decide version to use](#container-can-decide-version-to-use)
   - [Must be able to develop locally](#must-be-able-to-develop-locally)
@@ -21,11 +24,10 @@ This is a learning repo and I have outlined my main concerns. This is going to a
   - [Sub apps need to add in new pages routes all the time](#sub-apps-need-to-add-in-new-pages-routes-all-the-time)
   - [We might need to show two or more MFEs at the same time](#we-might-need-to-show-two-or-more-mfes-at-the-same-time)
   - [We want to use off-the-shelf routing solutions](#we-want-to-use-off-the-shelf-routing-solutions)
-  - [We need navication features for subapps in both hosted & isolation mode](#we-need-navication-features-for-subapps-in-both-hosted--isolation-mode)
-  - [If different apps need to communicate info about routing it should be done in as generic fasion as possible](#if-different-apps-need-to-communicate-info-about-routing-it-should-be-done-in-as-generic-fasion-as-possible)
+  - [We need navigation features for sub-apps in both hosted & isolation mode](#we-need-navigation-features-for-sub-apps-in-both-hosted--isolation-mode)
+  - [Child app communication about routing must be generic](#child-app-communication-about-routing-must-be-generic)
 
 <!-- toc-tail --> 
-
 
 ## Basic Requirements
 ### Zero coupling between child projects
@@ -39,7 +41,7 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 * Container shouldn't assume that a child is using a particular framework
 * Any necessary communication done w/callbacks or simple events
 
-### CSS from one poject shouldn't affect the other
+### CSS from one project shouldn't affect the other
 * All CSS is scoped to app
 
 ### Version control shouldn't have any impact on overall project
@@ -55,10 +57,9 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 
 ## Deployment requirements
 ### Deployment requirements
-* Want to deploy each microfrontend independantly (including container)
+* Want to deploy each microfrontend independently (including container)
 * Location of child app must be known at build time
-* Can handle deploying muliple projects
-* CI/CD
+* Can handle deploying multiple projects
 
 ### CDN
 * Apps are not containerized (Can be at edge)
@@ -66,8 +67,8 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 ## Routing requirements
 ### Container + sub-apps require routing features
 * Users can navigate around to different sub apps using routing logic built into the container
-* Users can navicate around _IN_ a subapp using routing logic built into the subapp itself
-* Not all subapps will require routing
+* Users can navigate around _IN_ a subapp using routing logic built into the subapp itself
+* Not all sub-apps will require routing
 
 ### Sub apps need to add in new pages routes all the time
 * New routes added to a subapp shouldn't require a redeploy of the container
@@ -77,13 +78,14 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 
 ### We want to use off-the-shelf routing solutions
 * Building a routing library can be hard, let's not do that shit
-* Somt aount of custom code will be required, we're okay with that
+* Some amount of custom code will be required, we're okay with that
 
-### We need navication features for subapps in both hosted & isolation mode
+### We need navigation features for sub-apps in both hosted & isolation mode
 * Developing for each environment should be easy
-    * A dev should be immediatly be able to see what path they are visiting
+    * A dev should be immediately be able to see what path they are visiting
 
-### If different apps need to communicate info about routing it should be done in as generic fasion as possible
+### Child app communication about routing must be generic
+If different apps need to communicate info about routing it should be done in as generic fashion as possible
 * Each app might be using a completely different navigation framework
-* We might swap out or upgrade naviation lirbaries all the time, shouldn't require a rewrite of the rest of the app
+* We might swap out or upgrade navigation libraries all the time, shouldn't require a rewrite of the rest of the app
 
