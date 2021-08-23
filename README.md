@@ -1,4 +1,4 @@
-![hero image](./images/CAASerole.jpeg)
+![hero image](./_images/CAASerole.jpeg)
 
 This is a learning repo and I have outlined my main concerns. This is going to a POC of my learnings and resolving these requirements
 
@@ -38,7 +38,7 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 * No shared state
 * Share libraries through MF okay
 
-![coupling issue](./images/coupling-issue.png)
+![coupling issue](./_images/coupling-issue.png)
 
 ### Near zero coupling between container & child apps
 * Container shouldn't assume that a child is using a particular framework
