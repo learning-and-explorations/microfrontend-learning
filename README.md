@@ -106,3 +106,13 @@ If different apps need to communicate info about routing it should be done in as
 * Each app might be using a completely different navigation framework
 * We might swap out or upgrade navigation libraries all the time, shouldn't require a rewrite of the rest of the app
 
+## Context requirements
+* The container must be able to give components context
+* The application must be able to handle that context
+    * ex: Different header depending on:
+        - Route
+        - Permissions
+        - Logged in status
+* Container _may_ allow for global state
+    * But must be immutable
+    * Not meant for component state
