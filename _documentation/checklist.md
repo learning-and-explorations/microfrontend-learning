@@ -1,6 +1,6 @@
 - [ ] Basic Requirements
-  - [ ] Zero coupling between child projects
-  - [ ] Near zero coupling between container & child apps
+  - [x] Zero coupling between child projects
+  - [x] Near zero coupling between container & child apps
   - [ ] CSS from one project shouldn't affect the other
   - [ ] Version control shouldn't have any impact on overall project
   - [ ] Container can decide version to use
