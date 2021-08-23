@@ -65,6 +65,8 @@ This is a learning repo and I have outlined my main concerns. This is going to a
 * Sub-apps should be able to determine their own destiny
     * A/B testing
     * A build-time feature not dynamic
+### (Optional) AWS
+* Prove it works in a CDN
 
 ## Deployment requirements
 ### Deployment requirements
