@@ -58,10 +58,5 @@
     "webpack-config-single-spa-react": "2.0.0",
     "webpack-dev-server": "^4.0.0-beta.0",
     "webpack-merge": "^5.7.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && concurrently pnpm:test pnpm:lint"
-    }
   }
 }
