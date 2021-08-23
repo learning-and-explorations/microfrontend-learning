@@ -1,0 +1,20 @@
+- [ ] Basic Requirements
+  - [ ] Zero coupling between child projects
+  - [ ] Near zero coupling between container & child apps
+  - [ ] CSS from one project shouldn't affect the other
+  - [ ] Version control shouldn't have any impact on overall project
+  - [ ] Container can decide version to use
+  - [ ] Must be able to develop locally
+- [ ] Important APIs
+  - [ ] Import Maps
+- [ ] Deployment requirements
+  - [ ] Deployment requirements
+  - [ ] CDN
+  - [ ] APIs should be lambdas
+- [ ] Routing requirements
+  - [ ] Container + sub-apps require routing features
+  - [ ] Sub apps need to add in new pages routes all the time
+  - [ ] We might need to show two or more MFEs at the same time
+  - [ ] We want to use off-the-shelf routing solutions
+  - [ ] We need navigation features for sub-apps in both hosted & isolation mode
+  - [ ] Child app communication about routing must be generic
