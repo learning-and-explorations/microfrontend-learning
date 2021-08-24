@@ -10,6 +10,8 @@
       - [ ] `mount()`
       - [ ] `unmount()`
       - [ ] `unload()`
+  - [ ] Reload on change
+    - Possibly has to do with the sockjs stuff
 
 - [ ] Important APIs
   - [ ] Import Maps
