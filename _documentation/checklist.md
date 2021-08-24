@@ -1,16 +1,24 @@
 - [ ] Basic Requirements
   - [x] Zero coupling between child projects
   - [x] Near zero coupling between container & child apps
-  - [ ] CSS from one project shouldn't affect the other
-  - [ ] Version control shouldn't have any impact on overall project
+  - [ ] ~CSS from one project shouldn't affect the other~
+  - [x] Version control shouldn't have any impact on overall project
   - [ ] Container can decide version to use
   - [ ] Must be able to develop locally
+  - [ ] [Lifecycle methods](https://single-spa.js.org/docs/building-applications/#registered-application-lifecycle)
+      - [ ] `bootstrap()`
+      - [ ] `mount()`
+      - [ ] `unmount()`
+      - [ ] `unload()`
+
 - [ ] Important APIs
   - [ ] Import Maps
+
 - [ ] Deployment requirements
   - [ ] Deployment requirements
   - [ ] CDN
   - [ ] APIs should be lambdas
+
 - [ ] Routing requirements
   - [ ] Container + sub-apps require routing features
   - [ ] Sub apps need to add in new pages routes all the time
